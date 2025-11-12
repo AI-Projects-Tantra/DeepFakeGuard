@@ -48,7 +48,7 @@ Below are example results (public demo only):
 
 | Frame Example 1 | Frame Example 2 | Frame Example 3 | Frame Example 4 | Frame Example 5 |
 |------------------|------------------|------------------|------------------|------------------|
-| ![Detected Frame 1](assets/4.png) | ![Detected Frame 2](assets/6.png) | ![Detected Frame 3](assets/7.png) | ![Detected Frame 4](assets/8.png) | ![Detected Frame 5](assets/9.png) |
+| ![Detected Frame 1](asssets/4.png) | ![Detected Frame 2](asssets/6.png) | ![Detected Frame 3](asssets/7.png) | ![Detected Frame 4](asssets/8.png) | ![Detected Frame 5](asssets/9.png) |
 
 
 ---
