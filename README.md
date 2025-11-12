@@ -1,12 +1,66 @@
-# React + Vite
+# 🧠 DeepFakeGuard: A Robust Framework for Detecting Synthetic Media in Images and Videos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+**DeepFakeGuard** is a machine learning and deep learning–based system designed to detect synthetic (AI-generated) images and videos.  
+This project focuses on identifying manipulated visual media using pre-trained models, ensuring authenticity in multimedia content.
 
-Currently, two official plugins are available:
+> ⚠️ Note: Model weights are not included in this repository due to confidentiality.  
+> The code demonstrates the full framework and pipeline structure.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎯 Features
+- Detects fake vs. real media (images and videos)
+- Utilizes pre-trained deep learning models for high accuracy
+- Modular pipeline for easy model replacement or fine-tuning
+- Supports both batch and real-time processing
+- Detailed logs and output visualization
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Tech Stack
+| Component | Technology Used |
+|------------|----------------|
+| Programming Language | Python |
+| Deep Learning Framework | TensorFlow / PyTorch |
+| Computer Vision | OpenCV |
+| Pre-trained Models | CNN / Xception / EfficientNet |
+| Supporting Libraries | NumPy, Matplotlib, Scikit-learn |
+
+---
+
+## 🧠 Architecture
+1. **Data Preprocessing** – Frame extraction, resizing, normalization  
+2. **Feature Extraction** – Using CNN-based pretrained models  
+3. **Classification Layer** – Fake/Real prediction  
+4. **Visualization** – Heatmaps and bounding boxes (for analysis)  
+5. **Result Storage** – Saves reports, processed frames, and logs  
+
+---
+
+## 📊 Example Output
+Below is a sample output from the system.
+
+### 🖼️ Image Output
+![Output Sample](./output_image.png)
+
+### 🎥 Video Output
+A sample video demonstrating DeepFake detection is included as:
+`output_video.mp4`
+
+---
+
+## 🚀 How to Run
+> Note: Since model weights are not shared, this project will not run end-to-end.  
+> However, you can follow these steps to understand or extend the system.
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/<your-username>/DeepFakeGuard.git
+cd DeepFakeGuard
+
+# 2️⃣ Install dependencies
+pip install -r requirements.txt
+
+# 3️⃣ Run main file (example)
+python main.py
